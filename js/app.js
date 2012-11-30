@@ -34,7 +34,7 @@ App.ViewModel = function() {
     
     // Initialize locally stored categories as an array
     if (!localStorage.getItem("categories")) {
-        localStroage.setItem("categories", "[]");
+        localStorage.setItem("categories", "[]");
     } else {
         localCategories = JSON.parse(localStorage.getItem("categories"));
         for (var i = 0; i < localCategories.length; i++) {
